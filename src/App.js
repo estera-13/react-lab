@@ -18,6 +18,10 @@ function App() {
     message = 'Tytuł jest extra'
   }
   
+  function handleClick(event) {
+        alert(title);
+  }
+
 
 
   return (
@@ -29,6 +33,7 @@ function App() {
       title.length > 0 && <div>{message}</div>
       }
       <input type="text" value={title} onChange={handleChange}/>
+      <button onClick={handleClick}>Pokaż tytuł filmu</button>
     </div>
   );
 }
